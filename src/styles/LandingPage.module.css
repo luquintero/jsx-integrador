@@ -1,0 +1,45 @@
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  background-color: #cccccc;
+  padding: 2rem;
+  text-align: left;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.featured {
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about, .featured {
+    padding: 1rem;
+  }
+}

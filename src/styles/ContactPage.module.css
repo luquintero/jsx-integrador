@@ -1,0 +1,11 @@
+.contactPage {
+  padding: 2rem;
+  width: 100% !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactPage h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
