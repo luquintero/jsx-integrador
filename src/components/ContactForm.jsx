@@ -14,7 +14,7 @@ const ContactForm = () => {
     <Formik
       initialValues={{ nombre: '', apellido: '', email: '', asunto: '' }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit={(values, { resetForm }) => {
         alert('Mensaje enviado correctamente!');
         resetForm();
       }}
