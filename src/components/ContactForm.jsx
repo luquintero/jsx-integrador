@@ -16,7 +16,7 @@ const ContactForm = () => {
       validationSchema={validationSchema}
       onSubmit={(values) => {
         alert('Mensaje enviado correctamente!');
-        actions.resetForm();
+        resetForm();
       }}
     >
       <Form className={styles.form}>
